@@ -23,14 +23,14 @@ function isWeekend(day, hour) {
     if (
       usersDay == "dimanche" ||
       usersDay == "samedi" ||
-      (usersDay == "lundi" && usersHour < 9)
+      ((usersDay == "lundi" && usersHour < 9) || (usersDay = "vendredi" && usersHour > 16) )
     ) {
       console.log(weekEndMessage);
     } else {
       console.log(weekMessage);
     }
   } else {
-    if (day === 0 || day === 6 || (day === 1 && hour < 9)) {
+    if (day === 0 || day === 6 || (day === 1 && hour < 9) || (day == 5 && hour > 16)) {
       console.log(weekEndMessage);
     } else {
       console.log(weekMessage);

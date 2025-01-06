@@ -11,42 +11,66 @@
 
         /* Section 1 */   
 
+        // Variable type string de nom "name" de valeur "Joe"
         var name = "Joe";
+
+        // Variable type string de nom "city" de valeur "London"
         var city = 'London';
+
+        // Variable type integer de nom age de valeur 32
         var age = 32;
+
+        // Variabe type booleen de nom isRed de valeur TRUE
         var isRed = true;
+
+        // Variable type booleen utilisant un comparateur "supérieur a" 
         var isOld = age > 80;
 
+        // Variable type tableau de nom "previousJobs"
         var previousJobs = ['lawyer', 'developper', 'Professionnal climber'];
 
+        // Fonction de nom "info" qui prend en paramètre deux variables
         function info(height, weight) {
+            // Si le paramètre "height" donné est STRICTEMENT supérieur a 180, on console.log("Vous êtes grand")
             if (height > 180) {
                 console.log('Vous êtes grand');
             }
+
+            // Si le paramètre "weight" donné est STRICTEMENT inférieur a 0, on console.log("oups, there is a problem")
             if (weight < 0) {
                 console.log('oups, there is a problem');
+                // Sinon si il est strictement inférieur a 15 on console.log("Are you taht slim ?")
             } else if ( weight < 15) {
                 console.log('Are you that slim ?')
+                // Sinon en cas par "défaut" on console.log("Good !")
             } else {
                 console.log('Good !')
             }
         }
+        // Utilisation de la fonction créer en amont en donnant les paramètres "165" et "45"
+        info(165, 45); // Lors de l'utilisation de la fonction on a bien le console.log("Good !") mais pas celui de "Vous êtes grand" comme voulu
 
-        info(165, 45);
-
+        // Variable de type integer de nom "myHeight" de valeur 175
         var myHeight = 175;
+
+        // Variable de type integer de nom "myHeight" de valeur 86
         var myWeight = 86;
 
-        info(myHeight, myWeight);
+        // Utilisation de la fonction créer, mais cette fois ci en utilisant les variables créer juste avant, au lieu de donner directement des nombres
+        info(myHeight, myWeight); // Lors de l'utilisation de la fonction on a bien le console.log("Good !") mais pas celui de "Vous êtes grand" comme voulu
 
-        info(myHeight + 15, myWeight - 100);
 
+        info(myHeight + 15, myWeight - 100); // Lors de l'utilisation de la fonction on a bien le console.log("Vous êtes grand") mais pas celui de "c'est good" car on a soustrait 100 au 86.
+
+        // Fonction qui prend une variable et la retourne en majuscule
         function toUpper(variable) {
             return variable.toUpperCase();
         }
 
+        // Variable de nom "upperName" qui utilise la fonction toUpper.
         var upperName = toUpper(name);
 
+        // Boucle qui itére 3 fois ( i < 3) et qui a chaque boucle console.log le métier présent dans le tableau previousJobs a l'index indiqué par la variable i qui existe localement dans la boucle
         for (i = 0; i < 3; i = i + 1) {
             console.log(previousJobs[i]);
         }
@@ -54,12 +78,15 @@
         /* Section 2: */
 
         // afficher la ville dans laquele Joe vit.     
+        console.log(city)
 
         // afficher si Joe est roux ou pas.
+        console.log(isRed)
 
         /* Section 3 */
 
-        // console.log(myVariable);
+        // Ce console.log ne fonctionne pas, car il veut afficher une variable qui n'existe pas, dans la console on peut voir l'erreur "undefined"
+        console.log(myVariable);
 
         </script>
 

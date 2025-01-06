@@ -1,7 +1,7 @@
 // you can write js here
 console.log("exo-2");
 
-const isTesting = false;
+const isTesting = true;
 const myDate = new Date().getDay();
 const hour = new Date().getHours();
 
@@ -18,7 +18,7 @@ function isWeekend(day, hour) {
     let usersHour = prompt(
       "Veuillez enter l'heure (sans les minutes) actuelle"
     );
-    let usersDay = prompt("Veuillez enter le jour actuel");
+    let usersDay = prompt("Veuillez enter le jour actuel").toLowerCase();
     console.log(usersHour, usersDay);
     if (
       usersDay == "dimanche" ||

@@ -1,4 +1,4 @@
-## Ex 7 - Listing d'articles sur un site marchand
+ ## Ex 7 - Listing d'articles sur un site marchand
 
 Nous allons essayer de nous rapprocher d'un site marchand.
 Nous vous fournissons un jeu de données qui reprend des articles que l'on peut retrouver sur un site de commerce en ligne type Le bon coin.

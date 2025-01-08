@@ -14,4 +14,4 @@ var jsonDatas=[
 			}
 		}
 	]
-}
+}]

@@ -108,27 +108,27 @@ console.log(scoreTotalEquipe);
 let scoreTotalOpponent = null;
 
 team.games.forEach((element) => {
-    scoreTotalOpponent += element.opponentPoints
+  scoreTotalOpponent += element.opponentPoints;
 });
 
 scoreMoyenOpponent = scoreTotalOpponent / team.games.length;
 
 console.log(scoreMoyenOpponent);
 
-
 function findOldestPlayer() {
-    let oldestPlayer = team.players[0]
+  let oldestPlayer = team.players[0];
 
-    team.players.forEach(element => {
-        if (oldestPlayer["age"] < element["age"]) {
-            oldestPlayer = element
-        }
-    });
+  team.players.forEach((element) => {
+    if (oldestPlayer["age"] < element["age"]) {
+      oldestPlayer = element;
+    }
+  });
 
-    console.log(oldestPlayer)
+  console.log(oldestPlayer);
 }
-findOldestPlayer()
+findOldestPlayer();
 
-let sortedTeamPlayerByLastname = team.players.sort((a, b) => a.lastname.localeCompare(b.lastname));
+let sortedTeamPlayerByLastname = team.players.sort((a, b) =>
+  a.lastname.localeCompare(b.lastname)
+);
 console.log(sortedTeamPlayerByLastname);
-
